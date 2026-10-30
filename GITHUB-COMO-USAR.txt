@@ -1,0 +1,10 @@
+RELÓGIO DO TEMPO - COMPILAÇÃO AUTOMÁTICA
+
+1. Crie um repositório GitHub.
+2. Extraia este ZIP e envie TODOS os arquivos e pastas diretamente na raiz do repositório, incluindo .github (pasta oculta).
+3. Faça commit.
+4. Abra Actions > Build Relogio do Tempo.
+5. Aguarde o resultado; se ficar verde, baixe o artifact relogio-do-tempo-build.
+6. Caso fique vermelho, abra o job build e compartilhe as mensagens de erro.
+
+ATENÇÃO: revisão estrutural não substitui compilação. O workflow só fica verde se o código compilar e os testes que o build executar passarem. Não há garantia de funcionamento no jogo.
