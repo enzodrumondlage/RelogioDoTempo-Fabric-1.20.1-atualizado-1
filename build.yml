@@ -23,13 +23,11 @@ jobs:
         with:
           gradle-version: '8.7'
       - name: Compilar o mod
-        run: gradle --no-daemon --stacktrace build
+        run: gradle build
       - name: Publicar o JAR compilado
         uses: actions/upload-artifact@v4
         with:
           name: relogio-do-tempo-build
-          path: |
-            build/libs/relogio-do-tempo-*.jar
-            !build/libs/*-sources.jar
+          path: build/libs/*.jar
           if-no-files-found: error
           retention-days: 14
